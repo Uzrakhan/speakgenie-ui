@@ -1,4 +1,4 @@
-import ActionButton from "./ActionButton";
+import ActionButton from "../../components/ActionButton";
 
 const actions = [
     { icon: "🎥", label: "Video Learning" },

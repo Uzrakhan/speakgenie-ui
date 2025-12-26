@@ -1,4 +1,4 @@
-import SectionTitle from "./SectionTitle";
+import SectionTitle from "../../components/SectionTitle";
 import PracticeCard from "./PracticeCard";
 import { FiPhoneCall } from "react-icons/fi";
 
