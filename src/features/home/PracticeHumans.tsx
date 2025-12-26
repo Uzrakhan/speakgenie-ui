@@ -11,37 +11,37 @@ export default function PracticeHumans() {
                 <PracticeCard 
                     title="Favorite Animals"
                     subtitle="Talk about your favorite animals and pets"
-                    image="https://picsum.photos/400/220?random=30"
+                    image="https://storage.googleapis.com/speakgenie-assets/images/practice-with-humans/Favorite%20Animals.jpeg"
                 />
 
                 <PracticeCard
                     title="Hobbies"
                     subtitle="Share what you love to do"
-                    image="https://picsum.photos/400/220?random=31"
+                    image="https://storage.googleapis.com/speakgenie-assets/images/practice-with-humans/Hobbies%20&%20Fun.jpeg"
                 />
 
                 <PracticeCard 
                     title="School Life"
                     subtitle="Chat about school, friends and learning"
-                    image="https://picsum.photos/400/220?random=32"
+                    image="https://storage.googleapis.com/speakgenie-assets/images/practice-with-humans/School%20Life.jpeg"
                 />
 
                 <PracticeCard
-                    title="Fvaorite Foods"
+                    title="Favorite Foods"
                     subtitle="Discuss yummy foods and recipes"
-                    image="https://picsum.photos/400/220?random=33"
+                    image="https://storage.googleapis.com/speakgenie-assets/images/practice-with-humans/Favorite%20Foods.jpeg"
                 />
 
                 <PracticeCard
                     title="Books & Stories"
                     subtitle="Talk about favorite books and stories"
-                    image="https://picsum.photos/400/220?random=34"
+                    image="https://storage.googleapis.com/speakgenie-assets/images/practice-with-humans/Books%20&%20Stories.jpeg"
                 />
 
                 <PracticeCard
                     title="Family & Traditions"
                     subtitle="Share about your family and special traditions"
-                    image="https://picsum.photos/400/220?random=35"
+                    image="https://storage.googleapis.com/speakgenie-assets/images/practice-with-humans/Family%20&%20Traditions.jpeg"
                 />
             </div>
         </>

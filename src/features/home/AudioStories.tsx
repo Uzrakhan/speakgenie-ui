@@ -21,7 +21,7 @@ export default function AudioStories() {
                             <img 
                                 src={s.image}
                                 alt={s.title}
-                                className="rounded-xl w-full h-full object-contain"
+                                className="rounded-xl w-full h-40 object-cover"
                             />
                         </div>
 
