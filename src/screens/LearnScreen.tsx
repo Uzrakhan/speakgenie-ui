@@ -6,11 +6,11 @@ export default function LearnScreen() {
 
   const modules = [
     { id: 1, title: "Practice Chat", image: "https://storage.googleapis.com/speakgenie-assets/images/learnscreen/coverimages/Practice%20Chat.jpg" },
-    { id: 2, title: "Role Play", image: "https://storage.googleapis.com/speakgenie-assets/images/learnscreen/coverimages/roleplay.jpg" },
+    { id: 2, title: "Quiz Generator", image: "https://storage.googleapis.com/speakgenie-assets/images/learnscreen/coverimages/Quiz%20Generato.jpg", link: "/learn/quiz" },
     { id: 3, title: "Word Meaning", image: "https://storage.googleapis.com/speakgenie-assets/images/learnscreen/coverimages/wordmeaning.jpg" },
     { id: 4, title: "Word Games", image: "https://storage.googleapis.com/speakgenie-assets/images/learnscreen/coverimages/word%20games.jpg" },
     { id: 5, title: "Reading...", image: "https://storage.googleapis.com/speakgenie-assets/images/learnscreen/coverimages/Reading%20Comprehension.jpg" },
-    { id: 6, title: "Quiz Generator", image: "https://storage.googleapis.com/speakgenie-assets/images/learnscreen/coverimages/Quiz%20Generato.jpg", link: "/learn/quiz" },
+    { id: 6, title: "Role Play ", image: "https://storage.googleapis.com/speakgenie-assets/images/learnscreen/coverimages/roleplay.jpg" },
     { id: 7, title: "Phonic & Sounds", image: "https://storage.googleapis.com/speakgenie-assets/images/learnscreen/coverimages/Phonics%20&%20Sounds.jpg" },
     { id: 8, title: "Sentence Builder", image:"https://storage.googleapis.com/speakgenie-assets/images/learnscreen/coverimages/Sentence%20Builder.jpg" }
   ];

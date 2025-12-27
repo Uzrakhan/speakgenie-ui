@@ -51,7 +51,7 @@ export default function QuizScreen() {
 
 
     return (
-        <div className="px-4">
+        <div className="min-h-screen bg-gray-50 px-4 pb-28">
             
             <div className="sticky top-0 z-30 py-3 bg-gray-50">
                 <button
@@ -140,7 +140,7 @@ export default function QuizScreen() {
             </div>
 
             {/** step2 */}
-            <div className="bg-white rounded-2xl shadow p-4 mt-4">
+            <div className="bg-white rounded-2xl shadow p-4 mt-5">
                 <p className="text-xs text-green-600 font-bold">
                     STEP 2
                 </p>
@@ -184,7 +184,7 @@ export default function QuizScreen() {
                 </div>
             </div>
 
-            <section className="bg-gradient-to-br from-green-500 to-emerald-500 rounded-3xl p-5 shadow-lg w-full text-white mt-3">
+            <section className="bg-gradient-to-br from-green-500 to-emerald-500 rounded-3xl p-5 shadow-lg w-full text-white mt-6">
                 <p className="font-semibold uppercase tracking-wide opacity-80 text-sm">
                     What you'll get
                 </p>
@@ -207,15 +207,17 @@ export default function QuizScreen() {
                 </ul>
             </section>
 
-            <div className="sticky top-0 bottom-10 left-0 z-30 px-4 mt-4 bg-white backdrop-blur flex-shrink-0">
-                <div className="w-full max-w-md mx-auto h-full">
-                    <button
-                        disabled={!topic}
-                        className={`w-full py-4 rounded-2xl text-white font-semibold transition-all shadow-lg
-                            ${topic ? 'bg-green-600 active:scale-[0.99]' : 'bg-gray-300'}`}
-                    >
-                        Generate Quiz
-                    </button>
+            <div className="fixed bottom-0 left-0 right-0 z-50">
+                <div className="max-w-md mx-auto">
+                    <div className="bg-white p-8 pb-20">
+                        <button
+                            disabled={!topic || !difficulty}
+                            className={`w-full py-4 rounded-2xl text-white font-semibold transition-all shadow-lg
+                                ${topic && difficulty ? 'bg-green-600 active:scale-[0.99]' : 'bg-gray-300'}`}
+                        >
+                            Generate Quiz
+                        </button>
+                    </div>
                 </div>
             </div>
 
