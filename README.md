@@ -15,6 +15,7 @@ The goal of this project was to match the given UI screenshots as closely as pos
 🌐 **Live Demo**
 
 🔗 **Live Link**: https://speakgenie-ui-rust.vercel.app/
+
 🔗 **GitHub Repo**: https://github.com/Uzrakhan/speakgenie-ui
 
 **Best viewed on mobile or narrow browser widths first — but the UI also adapts gracefully to larger screens.**
@@ -35,9 +36,13 @@ The goal of this project was to match the given UI screenshots as closely as pos
 
 Includes:
 • XP progress widget
+
 • Action quick-access buttons
+
 • AI Practice section
+
 • Practice with Humans
+
 • Audio Stories
 
 ------
@@ -46,10 +51,15 @@ Includes:
 
 Includes:
 • Story artwork
+
 • Title & description
+
 • Like button
+
 • Progress bar
+
 • Player controls (prev / play-pause / next)
+
 • CTA to generate a quiz
 
 -------
@@ -61,13 +71,21 @@ Includes:
 It includes:
 
 ✔ Header with Learn tab title
+
 ✔ Multiple learning modules + tools
+
 ✔ Cards such as:
+
 • Quiz Generator
+
 • AI Practice
+
 • Learning tools
+
 ✔ Mobile-first scrolling
+
 ✔ Responsive layout for laptop
+
 ✔ Tap navigation into Quiz Builder
 
 This page was designed to look **clean and uncluttered**, matching the tone of SpeakGenie’s UX for school-age learners.
@@ -81,22 +99,33 @@ This is the **two-step quiz creation flow:**
 **Step 1 — Choose a topic**
 
 ✔ Text input with live **character counter (max 60)**
+
 ✔ Suggested topic chips
+
 ✔ Click to auto-fill
+
 ✔ Active selection styling
+
 
 **Step 2 — Select difficulty level**
 
 ✔ Three difficulty options
+
 ✔ Custom icons per level
+
 ✔ Highlighted state on selection
+
 ✔ Explanation caption per difficulty
+
 
 **Sticky CTA**
 
 ✔ **Generate Quiz** button stays fixed at the bottom
+
 ✔ Disabled until valid input
+
 ✔ Matches the original app behavior & UI
+
 
 -------
 
