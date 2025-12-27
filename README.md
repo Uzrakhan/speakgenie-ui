@@ -130,7 +130,10 @@ This is the **two-step quiz creation flow:**
 -------
 
 🧩 **Project Structure**
-speakgenie/
+speakgenie-assignment/
+└── speakgenie/
+    ├── node_modules/
+    ├── public/
     ├── src/
     │   ├── components/
     │   │   ├── ActionButton.tsx
@@ -176,6 +179,7 @@ speakgenie/
     ├── index.html
     ├── package-lock.json
     └── package.json
+
 
 Built with reusable, composable components.
 
