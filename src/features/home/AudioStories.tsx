@@ -10,11 +10,11 @@ export default function AudioStories() {
         <>
             <SectionTitle title="Audio Stories" icon={<FiStar />}/>
 
-            <div className="flex gap-3 overflow-x-auto px-4 mt-6 no-scrollbar">
+            <div className="flex gap-3 overflow-x-auto px-4 mt-6 no-scrollbar md:justify-center md:px-0">
                 {stories.map((s) => (
                     <div 
                         key={s.id} 
-                        className="min-w-[130px] cursor-pointer"
+                        className="min-w-[130px] md:min-w-[160px] cursor-pointer"
                         onClick={() => navigate(`/player/${s.id}`)}
                     >
                         <div>

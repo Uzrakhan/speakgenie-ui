@@ -8,26 +8,29 @@ import QuizScreen from  './screens/QuizScreen';
 
 function App() {
   const location = useLocation();
-  const hideBottomNav = 
+
+  const hideBottomNav =
     location.pathname.startsWith("/player") ||
     location.pathname === "/learn/quiz";
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <div className="max-w-md mx-auto pb-24">
+    <div className="min-h-screen bg-gray-50 flex flex-col">
 
+      {/* MAIN CONTENT */}
+      <div className="flex-1 pb-20">
         <Routes>
-          <Route path='/' element={<HomeScreen />}/>
-          <Route path='/player/:id' element={<PlayerScreen />}/>
-          <Route path='/learn' element={<LearnScreen />}/>
-          <Route path='/learn/quiz' element={<QuizScreen />}/>
+          <Route path="/" element={<HomeScreen />} />
+          <Route path="/player/:id" element={<PlayerScreen />} />
+          <Route path="/learn" element={<LearnScreen />} />
+          <Route path="/learn/quiz" element={<QuizScreen />} />
         </Routes>
-        
       </div>
 
+      {/* BOTTOM NAV */}
       {!hideBottomNav && <BottomNav />}
     </div>
   );
 }
+
 
 export default App;
