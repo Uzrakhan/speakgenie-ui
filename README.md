@@ -3,7 +3,9 @@
 **A mobile-first responsive UI** built using **React, TypeScript, Tailwind CSS**, and React Router that recreates three key screens from the SpeakGenie web application:
 
 ✅ **Home / Dashboard**
+
 ✅ **Audio Story Player (Now Playing)**
+
 ✅ **Quiz Builder — “Craft a Custom Quiz”**
 
 The goal of this project was to match the given UI screenshots as closely as possible while writing **clean, maintainable, and well-structured frontend code.**
