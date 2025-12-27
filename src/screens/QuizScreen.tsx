@@ -2,11 +2,14 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { FiArrowLeft } from "react-icons/fi";
 import { FaStar } from "react-icons/fa";
+import { LuLightbulb, LuSparkles, LuTarget } from 'react-icons/lu'
+
 
 export default function QuizScreen() {
     const navigate = useNavigate();
     const MAX = 60;
     const [topic, setTopic] = useState("");
+    const [difficulty, setDifficulty] = useState<"easy" | "medium" | "hard"| "">("")
     const topics = [
         "My Best Friend",
         "Cricket Basics",
@@ -16,18 +19,52 @@ export default function QuizScreen() {
         "School Picnic",
     ];
 
-    return (
-        <div className="px-4 mt-4 pb-10">
-            
-            <button
-                onClick={() => navigate(-1)}
-                className="flex items-center gap-1 text-green-600 font-medium bg-white rounded-2xl shadow-sm py-1 px-2"
-            >
-                <FiArrowLeft size={15}/>
-                Back
-            </button>
+    const levels = [
+        {
+            id: "easy",
+            label: "Easy",
+            desc: "Short sentences & gentle vocabulary.",
+            color: "text-green-600",
+            border: "border-green-600",
+            bg: "bg-gradient-to-br from-green-50 to-white",
+            Icon: LuLightbulb
+        },
+        {
+            id: "medium",
+            label: "Medium",
+            desc: "Everyday situations with detail.",
+            color: "text-amber-600",
+            border: "border-amber-200",
+            bg: "bg-gradient-to-br from-amber-50 to-white",
+            Icon: LuSparkles
+        },
+        {
+            id: "hard",
+            label: "Hard",
+            desc: "Longer thinking and tricky choices.",
+            color: "text-purple-600",
+            border: "border-purple-200",
+            bg: "bg-purple-50",
+            Icon: LuTarget
+        },
+    ] as const;
 
-            <div className="bg-white rounded-2xl shadow-lg p-5 mt-4">
+
+    return (
+        <div className="px-4">
+            
+            <div className="sticky top-0 z-30 py-3 bg-gray-50">
+                <button
+                    onClick={() => navigate(-1)}
+                    className="flex items-center gap-1 text-green-600 font-medium bg-white rounded-2xl shadow-sm py-1 px-2"
+                >
+                    <FiArrowLeft size={15}/>
+                    Back
+                </button>
+            </div>
+            
+
+            <div className="bg-white rounded-2xl shadow-lg p-5 mt-5">
                 <p className="text-l text-green-600 font-semibold">
                     LEARN TAB
                 </p>
@@ -102,13 +139,86 @@ export default function QuizScreen() {
                 </div>
             </div>
 
-            <button
-                disabled={!topic}
-                className={`w-full mt-20 py-3 rounded-2xl text-white font-medium transition
-                    ${topic ? 'bg-green-600 active:scale-[0.99]' : 'bg-gray-300'}`}
-            >
-                Generate Quiz
-            </button>
+            {/** step2 */}
+            <div className="bg-white rounded-2xl shadow p-4 mt-4">
+                <p className="text-xs text-green-600 font-bold">
+                    STEP 2
+                </p>
+
+                <h2 className="font-semibold mt-1 text-xl">
+                    Pick a challenge level
+                </h2>
+
+                <div className="mt-3 flex flex-col gap-3">
+                    {levels.map(l => {
+                        const isActive = difficulty === l.id;
+                        const Icon = l.Icon;
+
+                        return (
+                            <button
+                                key={l.id}
+                                onClick={() => setDifficulty(l.id)}
+                                className={`w-full text-left rounded-2xl border p-4 transition active:scale-[0.98] m-1
+                                ${isActive ? `${l.bg} border-green-500 shadow-lg` : "border-gray-200 bg-white"}`}
+                            >
+                                <div className="flex justify-between items-start">
+                                    <p className={`font-semibold ${l.color}`}>
+                                        {l.label}
+                                    </p>
+
+                                    <Icon className={`${l.color} text-lg`} />
+                                </div>
+
+                                <p className="text-sm text-gray-500 mt-1">
+                                {l.desc}
+                                </p>
+
+                                {isActive && (
+                                <span className="inline-block mt-2 text-sm text-green-600 font-semibold px-2 py-1 rounded-full shadow-sm">
+                                    Selected
+                                </span>
+                                )}
+                            </button>
+                        );
+                    })}
+                </div>
+            </div>
+
+            <section className="bg-gradient-to-br from-green-500 to-emerald-500 rounded-3xl p-5 shadow-lg w-full text-white mt-3">
+                <p className="font-semibold uppercase tracking-wide opacity-80 text-sm">
+                    What you'll get
+                </p>
+                <h3 className="font-bold text-xl mt-1">
+                    Friendly quiz with instant feedback
+                </h3>
+                <ul className="mt-4 space-y-2 text-sm">
+                    <li className="flex items-start gap-2">
+                        <span className="mt-1 w-2 h-2 rounded-full bg-white"></span>
+                        Bite-sized explanations for every answer.
+                    </li>
+                    <li className="flex items-start gap-2">
+                        <span className="mt-1 w-2 h-2 rounded-full bg-white"></span>
+                            Tone automatically matches the learner profile.
+                    </li>
+                    <li className="flex items-start gap-2">
+                        <span className="mt-1 w-2 h-2 rounded-full bg-white"></span>
+                        Ready-to-play quiz inside the Learn tab.
+                    </li>
+                </ul>
+            </section>
+
+            <div className="sticky top-0 bottom-10 left-0 z-30 px-4 mt-4 bg-white backdrop-blur flex-shrink-0">
+                <div className="w-full max-w-md mx-auto h-full">
+                    <button
+                        disabled={!topic}
+                        className={`w-full py-4 rounded-2xl text-white font-semibold transition-all shadow-lg
+                            ${topic ? 'bg-green-600 active:scale-[0.99]' : 'bg-gray-300'}`}
+                    >
+                        Generate Quiz
+                    </button>
+                </div>
+            </div>
+
         </div>
     )
 }
