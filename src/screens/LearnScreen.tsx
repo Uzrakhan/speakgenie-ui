@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { FiArrowLeft, FiArrowRightCircle, FiBookOpen } from "react-icons/fi";
+import { FiArrowLeft, FiBookOpen } from "react-icons/fi";
 
 export default function LearnScreen() {
   const navigate = useNavigate();
