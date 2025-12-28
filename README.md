@@ -24,9 +24,13 @@ The goal of this project was to match the given UI screenshots as closely as pos
 🛠 **Tech Stack**
 
 1. React (Vite)
+
 2. TypeScript
+
 3. Tailwind CSS
+
 4. React Router
+
 5. React Icons
 
 --------
@@ -82,6 +86,7 @@ It includes:
 
 • Learning tools
 
+
 ✔ Mobile-first scrolling
 
 ✔ Responsive layout for laptop
@@ -106,7 +111,6 @@ This is the **two-step quiz creation flow:**
 
 ✔ Active selection styling
 
-
 **Step 2 — Select difficulty level**
 
 ✔ Three difficulty options
@@ -116,7 +120,6 @@ This is the **two-step quiz creation flow:**
 ✔ Highlighted state on selection
 
 ✔ Explanation caption per difficulty
-
 
 **Sticky CTA**
 
@@ -130,56 +133,45 @@ This is the **two-step quiz creation flow:**
 -------
 
 🧩 **Project Structure**
-speakgenie-assignment/
-└── speakgenie/
-    ├── node_modules/
-    ├── public/
-    ├── src/
-    │   ├── components/
-    │   │   ├── ActionButton.tsx
-    │   │   ├── BottomNav.tsx
-    │   │   └── SectionTitle.tsx
-    │   │
-    │   ├── data/
-    │   │   └── stories.ts
-    │   │
-    │   ├── features/
-    │   │   ├── home/
-    │   │   │   ├── ActionButtonRow.tsx
-    │   │   │   ├── AudioStories.tsx
-    │   │   │   ├── HeaderCard.tsx
-    │   │   │   ├── index.tsx
-    │   │   │   ├── PracticeAI.tsx
-    │   │   │   ├── PracticeCard.tsx
-    │   │   │   ├── PracticeHumans.tsx
-    │   │   │   └── XPCard.tsx
-    │   │   │
-    │   │   └── player/
-    │   │       ├── ArtworkCard.tsx
-    │   │       ├── index.tsx
-    │   │       ├── PlayerControls.tsx
-    │   │       ├── PlayerHeader.tsx
-    │   │       ├── ProgressBar.tsx
-    │   │       ├── QuizCTA.tsx
-    │   │       └── TrackInfo.tsx
-    │   │
-    │   ├── screens/
-    │   │   ├── HomeScreen.tsx
-    │   │   ├── LearnScreen.tsx
-    │   │   ├── PlayerScreen.tsx
-    │   │   └── QuizScreen.tsx
-    │   │
-    │   ├── App.css
-    │   ├── App.tsx
-    │   ├── index.css
-    │   └── main.tsx
-    │
-    ├── .gitignore
-    ├── eslint.config.js
-    ├── index.html
-    ├── package-lock.json
-    └── package.json
-
+src/
+├── components/
+│   ├── ActionButton.tsx
+│   ├── BottomNav.tsx
+│   └── SectionTitle.tsx
+│
+├── data/
+│   └── stories.ts
+│
+├── features/
+│   ├── home/
+│   │   ├── ActionButtonRow.tsx
+│   │   ├── AudioStories.tsx
+│   │   ├── HeaderCard.tsx
+│   │   ├── index.tsx
+│   │   ├── PracticeAI.tsx
+│   │   ├── PracticeCard.tsx
+│   │   ├── PracticeHumans.tsx
+│   │   └── XPCard.tsx
+│   │
+│   └── player/
+│       ├── ArtworkCard.tsx
+│       ├── index.tsx
+│       ├── PlayerControls.tsx
+│       ├── PlayerHeader.tsx
+│       ├── ProgressBar.tsx
+│       ├── QuizCTA.tsx
+│       └── TrackInfo.tsx
+│
+├── screens/
+│   ├── HomeScreen.tsx
+│   ├── LearnScreen.tsx
+│   ├── PlayerScreen.tsx
+│   └── QuizScreen.tsx
+│
+├── App.css
+├── App.tsx
+├── index.css
+└── main.tsx
 
 Built with reusable, composable components.
 
@@ -190,10 +182,15 @@ Built with reusable, composable components.
 This project was designed **mobile-first:**
 
 ✔ Horizontal scroll on sections like **Practice with Humans**
+
 ✔ Cards scale up on tablet/laptop
+
 ✔ Content rows centered visually on larger screens
+
 ✔ Bottom navigation stays fixed (hidden on player + quiz)
+
 ✔ Layout does **not break — it degrades gracefully**
+
 
 This matches SpeakGenie’s real product, which prioritizes young learners on mobile while staying usable on desktop.
 
@@ -202,30 +199,45 @@ This matches SpeakGenie’s real product, which prioritizes young learners on mo
 🧠 **State & Interactivity**
 
 1. **useState** for UI state (likes, selections, navigation)
+
 2. **useNavigate** + params for routing
+
 3. Controlled inputs with validation
+
 4. Disabled buttons until form valid
+
 5. Story navigation state machine
+
 
 ---------
 
 🧪 **How to Run Locally**
 
 git clone <repo>
+
 cd <repo>
+
 npm install
+
 npm run dev
+
 
 -------
 
 🧼 **Code Quality Practices**
 
 ✔ TypeScript props typing
+
 ✔ Meaningful component decomposition
+
 ✔ Descriptive naming
+
 ✔ Consistent Tailwind utility patterns
+
 ✔ Small, single-responsibility UI pieces
+
 ✔ Accessibility-minded (alt text, readable contrast)
+
 
 ----------
 
@@ -234,9 +246,13 @@ npm run dev
 A separate Product Feedback Document is included, covering:
 
 ✨ What works well
+
 🚧 Where learners may face friction
+
 💡 Suggested UX improvements
+
 🎯 Feature opportunities
+
 
 Written from the lens of a frontend + product-thinking mindset.
 
@@ -248,13 +264,21 @@ Written from the lens of a frontend + product-thinking mindset.
 If extended, I would add:
 
 🔹 Real API integration
+
 🔹 Audio state persistence
+
 🔹 Toast notifications
+
 🔹 Accessibility passes
+
 🔹 Unit tests
+
 🔹 Animation polish
+
 🔹 Real quiz engine
+
 🔹 Loading skeletons
+
 
 ----------
 
