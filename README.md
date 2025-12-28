@@ -10,6 +10,8 @@
 
 The goal of this project was to match the given UI screenshots as closely as possible while writing **clean, maintainable, and well-structured frontend code.**
 
+**I have added the product feedback pdf in the public folder**
+
 -------
 
 🌐 **Live Demo**
