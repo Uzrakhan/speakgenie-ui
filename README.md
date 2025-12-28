@@ -131,8 +131,9 @@ This is the **two-step quiz creation flow:**
 
 
 -------
+## 📁 Project Structure
 
-🧩 **Project Structure**
+```
 src/
 ├── components/
 │   ├── ActionButton.tsx
@@ -172,6 +173,11 @@ src/
 ├── App.tsx
 ├── index.css
 └── main.tsx
+```
+
+Built with reusable, composable components.
+```
+
 
 Built with reusable, composable components.
 
